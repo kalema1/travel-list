@@ -156,7 +156,7 @@ function Stats({ items }) {
     <footer className="stats">
       <em>
         💼 you have {numItems} items on your list, and you already packed{" "}
-        {numPacked} ({percentage}%)
+        {numPacked} ({isNaN(percentage) ? Number(0) : percentage}%)
       </em>
     </footer>
   );
